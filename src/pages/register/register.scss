@@ -1,0 +1,83 @@
+.register{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(208, 207, 227);
+
+    .container{
+        display: flex;
+        align-items: center;
+        width: 50%;
+        border-radius: 20px;
+        background-color: white;
+        height: 83%; 
+        flex-direction: row-reverse;
+        overflow: hidden;
+    
+        .left{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+            gap: 30px;
+            color: rgba(240, 209, 209, 0.849);
+            background: linear-gradient(rgba(39,11,96,0.5),rgba(39,11,96,0.5)), url('../pics/ninja.jpg') center;
+            background-size: cover;
+                        
+            h1{
+                font-size: 60px;
+                line-height: 50px;
+            }
+            p{
+                font-size: 15px;
+            }
+            span{
+                color: gray;
+                font-size: 15px;
+            }
+            button{
+                width: 50%;
+                border: none;
+                border-radius: 20px;
+                padding: 20px;
+                font-weight: bold;
+                cursor: pointer;
+                background-color: hsl(282, 73%, 49%);
+                margin-bottom: 0px;
+                color:  rgba(240, 209, 209, 0.849);
+            }
+        } 
+        .right{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            gap: 30px;
+            h1{
+                font-size: 60px;
+                line-height: 50px;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+               gap: 20px;
+            }
+            input{
+                border: none;
+                border-bottom: 1px solid;
+                padding: 20px;
+                width: 200px;
+            }
+            button{
+                width: 50%;
+                border: none;
+                border-radius: 20px;
+                padding: 20px;
+                cursor: pointer;
+                font-weight: bold;
+                background-color: hsl(282, 73%, 49%);
+            }
+        }
+    }
+}

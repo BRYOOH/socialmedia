@@ -1,0 +1,84 @@
+.login{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(208, 207, 227);
+
+  .container{
+    padding-top: 0px;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    border-radius: 20px; 
+    background-color: white;
+    height: 83%;
+    overflow: hidden;
+    
+    .left{
+        display: flex;
+        flex: 1;
+        color: rgba(240, 209, 209, 0.849);
+        background: linear-gradient(rgba(39,11,96,0.5),rgba(39,11,96,0.5)), url('../pics/madara.jpg') center;
+        background-size: cover;
+        flex-direction: column;
+        padding: 30px;
+        gap: 10px;
+
+        h1{
+            font-size: 80px;
+            line-height: 70px;
+        }
+        p{
+            font-size: 15px;
+
+        }
+        span{
+            font-size: 15px;
+            color: gray;
+
+        }
+        button{
+            width: 50%;
+            padding: 20px;
+            border: none;
+            background-color: hsl(282, 73%, 49%);;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 20px;
+            color: rgba(240, 209, 209, 0.849);
+        }
+    }
+    .right{
+     display: flex;
+     flex: 1;
+    flex-direction: column;
+    padding: 50px;
+    gap: 30px;
+        h1{
+            font-size: 80px;
+            line-height: 70px;
+        }
+        form{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        }
+        input{
+            border: none;
+            border-bottom: 1px solid lightgray;
+            padding: 20px;
+        }
+        button{
+                width: 50%;
+                padding: 20px;
+                background-color: hsl(282, 73%, 49%);;
+                font-weight: bold;
+                cursor: pointer;
+                border: none;
+                border-radius: 20px;
+
+        }
+    }
+  }  
+}
