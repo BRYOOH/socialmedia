@@ -4,7 +4,7 @@ import './leftbar.scss'
 const Leftbar = () => {
   return (
    <div className="leftbar">
-
+lefttbar
    </div>
   )
 }
