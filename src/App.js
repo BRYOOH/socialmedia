@@ -1,4 +1,4 @@
-import './App.css';
+import './styles.scss';
 import Login from './pages/login/Login'
 import Register from './pages/register/Register';
 import { createBrowserRouter,RouterProvider, Route, Navigate } from 'react-router-dom';
@@ -7,15 +7,17 @@ import Leftbar from './component/leftbar/Leftbar'
 import Rightbar from './component/rightbar/Rightbar'
 import Home from './pages/home/Home'
 import Profile from './pages/profile/Profile'
+import { useContext } from 'react';
+import { AuthContext } from './component/context/AuthContext';
 
 
 function App() {
 
-  const currentUser= true;
+  const {currentUser}= useContext(AuthContext);
 
     const Layout=()=>{
       return (
-        <div>
+          <div className='theme-light'>
           <Navbar/>
           <div style={{display: "flex"}}>
             <Leftbar/>
@@ -65,9 +67,10 @@ function App() {
   return (
       <div>
         <RouterProvider router={router}/>  
+        
       </div>    
-    
-  );
+  
+  )
 }
 
 export default App;

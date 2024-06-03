@@ -1,11 +1,15 @@
-import React from 'react'
-import './home.scss'
 
-const Home = () => {
+import './home.scss'
+import Stories from '../../component/stories/Stories'
+
+
+function Home() {
   return (
-    <div className="home">
-        home
-    </div>
+
+<div className="home"> 
+<Stories/>
+</div>
+
   )
 }
 
